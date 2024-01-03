@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/93a2f75320.js" crossorigin="anonymous"></script>
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h2>Olá, eu sou <span>Bruno Hiago</span>.<br> Sou <span>Desenvolvedor FullStack</span>.</h2>
+
+            <img src="/img/Profile (1).jpg" alt="Bruno Hiago">
+        </section>
+
+        <section id="sobre">
+            <div class="bubble"></div>
+
+            <div id="divAboutMe">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Meu nome é <span>Bruno Hiago</span>, tenho 22 anos e sou estudante do sexto período
+                    de Engenharia de Computação, morando atualmente no Brasil.
+                    Sou um desenvolvedor apaixonado por tecnologia, com experiência em
+                    desenvolvimento de software e criação de soluções inovadoras. Tenho habilidades em linguagens
+                    de programação como Python, JavaScript e Java, e uma compreensão profunda de conceitos de
+                    desenvolvimento web, como frameworks, bancos de dados e integração de APIs.
+                </p>
+                <p>
+                    Sou comprometido
+                    em criar código de alta qualidade, seguindo as melhores práticas de programação e buscando
+                    constantemente atualizar minhas habilidades e conhecimentos em tecnologia. Sou apaixonado por
+                    aprender e aplicar novas tecnologias em projetos desafiadores e estou sempre em busca de
+                    oportunidades para contribuir e crescer como profissional de desenvolvimento de software.
+                </p>
+            </div>
+
+
+
+
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul id="listSkills">
+
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li>
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="projects/Galact Meteor Smash/GalacticMeteorSmash.jpg" alt="Galactic-Meteor-Smash">
+                            <a href="https://github.com/BrunoHiago/Galactic-Meteor-Smash"><i
+                                    class="fa-brands fa-github card-icon"></i></a>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Galactic Meteor Smash</h2>
+                            <p>
+                                Este é um jogo simples de nave espacial desenvolvido em Python utilizando a biblioteca
+                                Pygame. O objetivo do jogo é controlar
+                                uma nave espacial e destruir os meteoros que estão vindo em sua direção.
+                            </p>
+                            <a href="/projects/Galact Meteor Smash/index.html">
+                                <button>Ver Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="img/circuit.jpg" alt="Imagem do Card">
+                            <i class="fa-brands fa-github card-icon"></i>
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Nome do Produto</h2>
+                            <p>Descrição breve do produto.</p>
+                            <button>Ver mais</button>
+                        </div>
+                    </div>
+                </li>
+                <!-- Adicione mais projetos conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="contato">
+            <div class="containerContact">
+                <h2>Entre em Contato</h2>
+                <form action="mailto:brunohiagoxavier92@gmail.com" method="post" enctype="text/plain">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Escreva seu nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Escreva seu email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"
+                        required></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/bruno-hiago" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/BrunoHiago/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+        <p>&copy; Feito por Bruno Hiago.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
