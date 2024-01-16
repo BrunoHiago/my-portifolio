@@ -1,6 +1,4 @@
 // Cria os círculos
-
-const listSkills = document.querySelector('#listSkills');
 const skills = [
     { name: 'HTML', progress: 92 },
     { name: 'CSS', progress: 70 },
@@ -108,28 +106,25 @@ const createCircle = (parentElement, progress, name) => {
 
 let skillsSection = document.getElementById('habilidades');
 
-let observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Remova os círculos existentes
-            while (listSkills.firstChild)
-                listSkills.removeChild(listSkills.firstChild);
-            // Inicie a animação quando a seção de habilidades entrar na viewport
-            skills.forEach(skill => {
-                createCircle(listSkills, skill.progress, skill.name);
-                onload(listSkills);
-            });
-        } else {
-            // Reinicie a animação quando a seção de habilidades sair da viewport
-            skills.forEach(skill => {
-                createCircle(listSkills, 0, skill.name); // Redefina o progresso para 0
-                onload(listSkills);
-            });
-        }
+skillsSection.addEventListener('mouseenter', () => {
+    // Remova os círculos existentes
+    while (listSkills.firstChild)
+        listSkills.removeChild(listSkills.firstChild);
+
+    // Crie novos círculos
+    skills.forEach(skill => {
+        createCircle(listSkills, skill.progress, skill.name);
+    });
+
+    // Inicie a animação
+    let listItems = document.querySelectorAll('#listSkills');
+
+    listItems.forEach(listItem => {
+        onload(listItem);
     });
 });
 
-observer.observe(skillsSection);
+
 
 const cards = document.querySelectorAll('.card');
 
