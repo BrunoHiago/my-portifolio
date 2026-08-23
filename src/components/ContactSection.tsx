@@ -102,7 +102,7 @@ export function ContactSection({ lang }: ContactProps) {
       </div>
 
       <div className="mt-16 pt-8 border-t border-white/5 flex flex-wrap items-center justify-between text-[10px] font-medium text-slate-500">
-        <p>&copy; {new Date().getFullYear()} Bruno Hiago. {content.rights}</p>
+        <p>&copy; {new Date().getFullYear()} Bruno Xavier. {content.rights}</p>
         <p>{content.made}</p>
       </div>
     </section>

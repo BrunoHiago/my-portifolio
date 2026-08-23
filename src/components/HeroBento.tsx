@@ -48,7 +48,7 @@ export function HeroBento({ lang }: HeroProps) {
           
           <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
             {content.greeting}
-            <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">Bruno Hiago</span>.
+            <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">Bruno Xavier</span>.
             <br />
             {content.subGreeting}
           </h1>
@@ -102,7 +102,7 @@ export function HeroBento({ lang }: HeroProps) {
             <div className="h-full w-full rounded-full overflow-hidden bg-[#0C0A20]">
               <img
                 src="/img/Profile.jpg"
-                alt="Bruno Hiago"
+                alt="Bruno Xavier"
                 className="h-full w-full object-cover grayscale contrast-125 transition-all duration-500 hover:grayscale-0 hover:scale-105"
               />
             </div>

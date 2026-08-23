@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Bruno Hiago | Full Stack & Mobile",
+  title: "Bruno Xavier | Full Stack & Mobile",
   description:
-    "Portfólio de Bruno Hiago Xavier – Desenvolvedor Full Stack & Mobile, AI-Assisted Developer."
+    "Portfólio de Bruno Xavier – Desenvolvedor Full Stack & Mobile, AI-Assisted Developer."
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
