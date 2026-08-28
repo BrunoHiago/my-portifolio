@@ -60,7 +60,7 @@ export function ProjectsSection({ lang }: ProjectsProps) {
       description: lang === 'pt'
         ? "Sistema para produtores rurais que centraliza o controle de áreas, custos, receitas e indicadores de produtividade, apoiando decisões mais assertivas."
         : "A farm-management system that centralizes areas, costs, revenue, and productivity indicators to support better data-driven decisions.",
-      image: "/api/files?file=logo/AgritrackBanner.png",
+      image: "/img/AgritrackBanner.png",
       tags: ["NestJS", "Next.js", "PostgreSQL", "Google Maps"],
       link: "https://agritrack.com.br",
       hasRegistry: true,
@@ -74,7 +74,7 @@ export function ProjectsSection({ lang }: ProjectsProps) {
       description: lang === 'pt'
         ? "Foodie Finds é um aplicativo de recomendação de restaurantes para explorar cardápios, favoritar estabelecimentos e acessar dados em tempo real, com backend em NestJS."
         : "Foodie Finds is a restaurant recommendation app that lets you explore menus, favorite places, and access real-time data, backed by a NestJS API.",
-      image: "/api/files?file=logo/FoodieFindsLogo.png",
+      image: "/img/FoodieFindsLogo.png",
       tags: ["Kotlin", "Compose", "NestJS", "PostgreSQL"],
       link: "https://github.com/BrunoHiago/FoodApp",
       hasRegistry: false,
@@ -307,7 +307,7 @@ export function ProjectsSection({ lang }: ProjectsProps) {
               {/* GIF Container */}
               <div className="relative w-full aspect-[9/16] max-h-[460px] overflow-hidden rounded-xl border border-white/5 bg-black flex items-center justify-center">
                 <img
-                  src="/api/files?file=preview/FoodieFinds.gif"
+                  src="/img/FoodieFinds.gif"
                   alt="Foodie Finds Preview"
                   className="h-full object-contain"
                 />
