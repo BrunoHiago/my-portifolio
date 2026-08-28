@@ -27,7 +27,7 @@ export function Navbar({ lang, setLang }: NavbarProps) {
         <div className="flex items-center gap-2.5">
           <span className="h-2 w-2 rounded-full bg-[#10B981] animate-pulse" />
           <a href="#" className="text-sm font-semibold tracking-wide text-white hover:text-slate-200">
-            BH<span className="text-[#8B5CF6]">.</span>PORTFOLIO
+            BX<span className="text-[#8B5CF6]">.</span>PORTFOLIO
           </a>
         </div>
         

@@ -29,12 +29,12 @@ export function HeroBento({ lang }: HeroProps) {
   }[lang];
 
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-16 md:py-28 overflow-hidden">
+    <section className="relative isolate w-full overflow-hidden">
       {/* Background neon glows */}
-      <div className="glow-bg -top-10 -left-10" />
-      <div className="glow-cyan-bg top-40 right-10" />
+      <div className="glow-bg z-0 -top-10 -left-10" />
+      <div className="glow-cyan-bg z-0 top-40 right-10" />
 
-      <div className="grid gap-12 md:grid-cols-12 items-center">
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-12 md:py-28">
         {/* Left Side: Headline & Brand Intro */}
         <motion.div
           className="md:col-span-7 flex flex-col justify-center"
