@@ -24,6 +24,7 @@ export async function GET(request: NextRequest) {
       useSSL: endpointUrl.protocol === "https:",
       accessKey,
       secretKey,
+      region: process.env.MINIO_REGION ?? 'us-east-1'
     });
     const bucket = process.env.MINIO_BUCKET_NAME ?? "public";
     const prefix = process.env.MINIO_PREFIX ?? "portifolio/";
